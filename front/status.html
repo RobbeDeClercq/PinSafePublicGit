@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ProjectI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/screen.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+            integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script defer src="./script/dataHandler.js"></script>
+    <script defer src="./script/status.js"></script>
+  </head>
+  <body>
+    <header class="o-row">
+      <div class="o-container">
+          <div class="c-header">
+                <div class="c-header__nav">
+                        <nav class="c-nav">
+                            <ul class="o-list c-nav__list">
+                                <li class="c-nav__item"><a href="pins.html" class="c-nav__link">Pincodes</a></li>
+                                <li class="c-nav__item is_selected"><a href="status.html" class="c-nav__link">Status</a></li>
+                            </ul>
+                        </nav>
+                </div>
+          </div>
+      </div>
+    </header>
+    <section class="o-row c-main">
+      <div class="o-container">
+        <div class="c-content">
+          <div class="c-beweging">
+            <h3>Laatst geregistreerde beweging :</h3>
+            <p>01/01/2019 20:50</p>
+          </div>
+          <hr class="c-hr">
+          <div class="c-status">
+            <div class="c-status__text">
+                <h3>Status deur :</h3>
+                <span class="c-closed">Gesloten</span>
+            </div>
+            <hr class="c-hr">
+            <div class="c-lock">
+                <span class="c-lock__img--closed"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

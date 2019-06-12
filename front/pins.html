@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ProjectI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/screen.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+            integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script defer src="./script/dataHandler.js"></script>
+    <script defer src="./script/pin.js"></script>
+  </head>
+  <body>
+    <header class="o-row">
+      <div class="o-container">
+          <div class="c-header">
+                <div class="c-header__nav">
+                        <nav class="c-nav">
+                            <ul class="o-list c-nav__list">
+                                <li class="c-nav__item is_selected"><a href="pins.html" class="c-nav__link">Pincodes</a></li>
+                                <li class="c-nav__item"><a href="status.html" class="c-nav__link">Status</a></li>
+                            </ul>
+                        </nav>
+                </div>
+          </div>
+      </div>
+    </header>
+    <section class="o-row c-main">
+      <div class="o-container">
+        <div class="c-content">
+          <div class="c-actief">
+            <h3>Actieve Pincodes</h3>
+            <p>Geen Actieve pincodes momenteel...</p>
+          </div>
+          <hr class="c-hr">
+          <div class="c-actief__codes">
+              <div class="c-actief__item">
+                    <span class="c-actief__pin">1234</span>
+                    <span class="c-img__delet"></span>
+              </div>
+              <div class="c-actief__item">
+                    <span class="c-actief__pin">3456</span>
+                    <span class="c-img__delet"></span>
+              </div>
+              <div class="c-actief__item">
+                    <span class="c-actief__pin">7382</span>
+                    <span class="c-img__delet"></span>
+              </div>
+          </div>
+          <div class="c-beschik">
+            <h3>Beschikbare Pincodes</h3>
+            <hr class="c-hr">
+            <div class="c-combo__section">
+                <div class="custom-select">
+                    <select name="pincombo" id="pincombo" class="c-input__select">
+                        <option value="0">Kies pincode:</option>
+                    </select>
+                </div>
+                <span class="c-img__ok"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

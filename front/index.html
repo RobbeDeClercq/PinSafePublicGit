@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ProjectI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/screen.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+            integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script defer src="./script/dataHandler.js"></script>
+    <script defer src="./script/app.js"></script>
+  </head>
+  <body>
+    <header class="o-row">
+      <div class="o-container">
+        <div class="c-header">
+          <div class="c-title">
+            login
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="o-row c-main">
+      <div class="o-container">
+        <div class="c-loginform">
+          <form action="">
+                <div class="c-email">
+                  <p>Gebruikersnaam</p>
+                  <hr class="c-hr">
+                  <input type="text" class="c-input" name="user">
+                </div>
+                <div class="c-ww">
+                  <p>Wachtwoord</p>
+                  <hr class="c-hr">
+                  <input type="password" class="c-input" name="ww">
+                </div>
+                <div class="c-submit">
+                  <input type="submit" value="Login" class="c-input__submit">
+                </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
